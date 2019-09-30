@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<!--手机版头部js代码跟css样式 @wanggc-->
+  <head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<meta content="telephone=no" name="format-detection" />
+		<title></title>
+                 <link rel="stylesheet" type="text/css" href="http://wap.hxb.com.cn/phone/css/phonePublicHead.css"/>
+		 <link rel="stylesheet" type="text/css" href="http://wap.hxb.com.cn/phone/css/swiper-3.4.1.min.css"/>
+		
+
+		<script type="text/javascript">
+		    (function(){
+		    	var sUserAgent = navigator.userAgent.toLowerCase();
+		    	var bIsIpad = sUserAgent.match(/ipad/i)=="ipad";
+		    	var bIsIphoneOs = sUserAgent.match(/iphone os/i)=="iphone os";
+		    	var bIsMidp = sUserAgent.match(/midp/i)=="midp";
+		    	var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i)=="rv:1.2.3.4";
+		    	var bIsUc = sUserAgent.match(/ucweb/i)=="ucweb";
+		    	var bIsAndroid = sUserAgent.match(/android/i)=="android";
+		    	var bIsCE = sUserAgent.match(/windows ce/i)=="windows ce";
+		    	var bIsWM = sUserAgent.match(/windows mobile/i)=="windows mobile";
+		    	if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)){
+		    	      //pc地址（注：需要加"http://后面接地址"）
+		    	       
+		    	  }else{
+		    	      //移动端地址（注：需要加"http://后面接地址"）
+		                  //window.location.href="http://www.lirenclub.com.cn/wap/sjbsy/index.shtml";
+
+		    	    }
+		    	});
+
+                   </script>
+
+
+		<script type="text/javascript">
+		    (function(){
+		    	var html = document.documentElement;
+		    	var hWidth = html.getBoundingClientRect().width;
+		    	console.log(hWidth)
+				html.style.fontSize = hWidth/15 + "px";
+		    })()
+		
+		</script>
+ 		<style type="text/css">
+			body{
+				font-family: Helvetica;
+				margin: 0;
+
+			}
+			
+			body * {
+
+				-webkit-text-size-adjust: 100%;/*禁止用户缩放字体*/
+				/*-webkit-user-select: none;禁止用户选中文字,只有苹果和谷歌模拟好用，安卓需要事件中进行修改*/
+			}
+		/*清除点击阴影*/
+			a,
+			input,
+			button{
+				 -webkit-tap-highlight-color: rgba(0,0,0,0);
+			}
+		/*清除ios按钮圆角*/
+			input,
+			button{
+				-webkit-appearance: none;
+				border-radius: 0;/*直接写清除不了，但是还得加是因为上面的清完了还是有圆角的效果*/
+			}
+			
+		</style>
+
+               <link rel="stylesheet" type="text/css" href="http://wap.hxb.com.cn/phone/css/phone_main.css"/>
+
+		
+	         
+	</head>
+         <script src="http://wap.hxb.com.cn//phone/js/zepto.min.js" type="text/javascript" charset="utf-8"></script>	
+	<script src="http://wap.hxb.com.cn//phone/js/swiper-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://wap.hxb.com.cn//phone/js/backTop.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+
+	<body style="overflow-x:hidden;">
+	<header id="header">
+<!--手机版客服电话跟logo @wanggc-->
+  
+
+<div id="header_box">
+     <img class="header_left" src="http://wap.hxb.com.cn/images/wlyh/sjbwljr/kfdhgtb/2017/03/14/141504295DBFD00D1C5E5920D71C0CCCD7ED21D1.jpg"/>
+	   <div class="header_right">
+		<p>24小时客服热线：<span>95577</span></p>
+		<p>信用卡客服：<span>4006695577</span></p>
+	  </div>
+</div>
+
+</header>
+<div>
+	<a href="ti_e/index.html">
+	<img src="https://www.9dai.org/uploads/allimg/190318/1552883504_2443bSPj.gif?wx_fmt=gif" style="width:100%;height: auto;">
+	<div style="display: flex;justify-content: center;align-items: center;height: 80px;">
+		<div style="text-align: center;padding: 5px 50px;background-color: orange;color:white; border-radius: 100px; border:1px red solid;font-size: 1rem;">立即提额</div>
+	</div>
+  </a>
+	
+</div>
+ <!--
+
+		<nav id="nav_box">
+			<ul>
+				<li><a class="active" href="javascript:void(0)">首页</a></li>
+				<li><a href="http://wap.hxb.com.cn/wap/sjbwljr/wljr/index.shtml">网络金融</a></li>
+				<li><a href="http://wap.hxb.com.cn/wap/sjbgrjr/grjr/index.shtml">个人金融</a></li>
+				<li><a href="http://wap.hxb.com.cn/wap/sjbqyjr/qyjr/index.shtml">公司金融</a></li>
+				<li><a href="http://wap.hxb.com.cn/wap/sjbxyk_1/creditIndex.shtml">信用卡</a></li>
+			</ul>
+		</nav>
+	-->
+          <!--..........................................热点滚动图模块分割..............................................-->
+	<!-- 	<div id="index_banner">
+			<div class="swiper-container">
+			                          <div class="swiper-wrapper">
+                   
+			  <div class="swiper-slide"><a href="http://mp.weixin.qq.com/s/lbfCTpeCDP5wMW2cR4ltUQ"><img src="http://wap.hxb.com.cn/images/sjbsy/syrdgdt/2018/02/27/271408341F551A6DBEB41BD16A2E7B3F126443BF.jpg"/></a></div>
+		  
+	          </div>
+
+	    		        <div class="swiper-pagination"></div>
+			</div>
+		</div>
+	-->
+        <!--..........................................业务快捷链接模块分割..............................................-->
+	<!--	<div id="index_content_list">
+                           
+<ul >
+
+                
+		<li><a href="http://wap.hxb.com.cn/wap/hxesq/index.shtml"><img src="http://wap.hxb.com.cn/images/sjbsy/bgzlmtz/2017/03/17/17092426F89806B4A8DDDDE86680AA27BED184ED.png"/><span>智慧社区</span></a></li>
+			
+                
+		<li><a href="http://wap.hxb.com.cn/wap/swcg/index.shtml"><img src="http://wap.hxb.com.cn/images/sjbsy/bgzlmtz/2017/03/17/17092601B17DB08515472A85182091FCE5364E6A.png"/><span>出国金融</span></a></li>
+			
+                
+		<li><a href="http://wap.hxb.com.cn/wap/grjr/grtsyw/grtsindex.shtml"><img src="http://wap.hxb.com.cn/images/sjbsy/bgzlmtz/2017/03/17/17092404BADE65C54A1DC5FBE2AAA6C7A3018D4A.png"/><span>特色业务</span></a></li>
+			
+                
+		<li><a href="http://wap.hxb.com.cn/wap/jjcx/index.shtml"><img src="http://wap.hxb.com.cn/images/sjbsy/bgzlmtz/2017/03/17/170926355103E8FBB52CA61A941AB5BA88A061F1.png"/><span>基金业务</span></a></li>
+			
+                
+		<li><a href="http://wap.hxb.com.cn/wap/zylcjdxcpcx/cpcx.html"><img src="http://wap.hxb.com.cn/images/sjbsy/bgzlmtz/2017/03/17/17092756B5192CA9FBCB518194B9C435E1C1893F.png"/><span>产品查询</span></a></li>
+			
+                
+		<li><a href="http://wap.hxb.com.cn/wap/yhkx/index.shtml"><img src="http://wap.hxb.com.cn/images/sjbsy/bgzlmtz/2017/03/17/170925297FA3A9202FF41F676A99D259E04CCADB.png"/><span>优惠快讯</span></a></li>
+			
+                
+		<li><a href="http://wap.hxb.com.cn/wap/sjblccpxx/index.shtml"><img src="http://wap.hxb.com.cn/images/sjbsy/bgzlmtz/2017/03/17/17092733C8552D7F49F6FB2A956E705FEA4ED6B9.png"/><span>龙盈理财</span></a></li>
+			
+                
+		<li><a href="https://m.hxb.com.cn/pwxweb/NearbyQry.do?key=8da3106456bd3b245a2e7f817ea8ce551c718773adb051f62638976686245bb6c7feddbe11d44eb613b9aedc286eb1f2"><img src="http://wap.hxb.com.cn/images/sjbsy/bgzlmtz/2017/03/17/17092832D5F4E0A709FE152198C5504CE14E6C60.png"/><span>网点查询</span></a></li>
+			
+ 
+</ul> -->
+ <!--8个栏目跳转 @wanggc-->
+		</div>
+        <!--..........................................模块分割..............................................-->
+		<div id="index_notice1">
+			       
+            <div id="index_content_notice1">
+				<span class="index_notice_title1">移动下载专区</span>
+				<a class="index_notice_content1" href="#">办理华夏银行卡畅享缤纷好礼</a>
+			</div>    
+            <ul>
+            
+                            
+                    <li><a href="https://itunes.apple.com/cn/app/hua-xia-yin-xing-shou-ji-yin/id666188756?mt=8"><img src="http://wap.hxb.com.cn/images/sjbsy/syydxzzq/2017/03/16/161601294A1AF6183E44847EF23B4AED4611E9AA.jpg"/><p>苹果</p><p>移动银行</p></a></li>
+                        
+                            
+                    <li><a href="/chinese/app/mobile/HXB_AM.apk"><img src="http://wap.hxb.com.cn/images/sjbsy/syydxzzq/2017/03/16/16160152E1D9834986CA170BD421CC57F2A286AE.jpg"/><p>安卓</p><p>移动银行</p></a></li>
+                        
+                            
+                    <li><a href="https://itunes.apple.com/cn/app/hua-xia-zhi-xiao-yin-xing/id922363240?mt=8"><img src="http://wap.hxb.com.cn/images/sjbsy/syydxzzq/2017/03/16/16160209BD71C23102BFF3874150EB02517E923C.jpg"/><p>苹果</p><p>直销银行</p></a></li>
+                        
+                            
+                    <li><a href="/chinese/app/directbank/HXB_DB.apk"><img src="http://wap.hxb.com.cn/images/sjbsy/syydxzzq/2017/03/16/16160225D7A77467F810F495AEAD30500DBF07BD.jpg"/><p>安卓</p><p>直销银行</p></a></li>
+                        
+             
+            </ul>
+
+		</div>
+	<!--..........................................模块分割..............................................-->	
+		<div id="index_content_banner1">          
+			<div class="swiper-container">
+			                    <div class="swiper-wrapper">
+                   
+			  <div class="swiper-slide"><a href="#"><img src="http://wap.hxb.com.cn/images/sjbsy/zjgdt/2018/02/02/020907083EA96C93B22F5B6A47D4312BE4E6390C.png"/></a></div>
+		  
+	          </div>
+
+	    		<div class="swiper-pagination"></div>
+			</div>
+		</div>
+        <!--..........................................模块分割..............................................-->
+		<!--<div id="index_notice2">-->
+			<!--       
+            <div id="index_content_notice2">
+				<span class="index_notice_title2">完美生活</span>
+				<a class="index_notice_content2" href="#">华夏银行让生活更完美</a>
+			</div>    
+            <ul> 
+            <ul>
+            
+                            
+                    <li><a href="http://wap.hxb.com.cn/wap/gwsc/prefect/index.shtml"><img src="http://wap.hxb.com.cn/images/sjbsy/sywmshmk/2017/03/16/161651332B8849C617410ABE859AAEAB0B98C88E.png"/><span>购物商城</span></a></li>
+                        
+                            
+                    <li><a href="http://wap.hxb.com.cn/wap/yljk/index.shtml"><img src="http://wap.hxb.com.cn/images/sjbsy/sywmshmk/2017/03/16/161651442699600737250F936FD92AFEC2441472.png"/><span>医疗健康</span></a></li>
+                        
+                            
+                    <li><a href="http://wap.hxb.com.cn/wap/lycx/index.shtml"><img src="http://wap.hxb.com.cn/images/sjbsy/sywmshmk/2017/03/16/161651546EDC1B15AFD7FF5DDFA92FC1B4381E90.png"/><span>旅游出行</span></a></li>
+                        
+                            
+                    <li><a href="http://wap.hxb.com.cn/wap/jjaz/index.shtml"><img src="http://wap.hxb.com.cn/images/sjbsy/sywmshmk/2017/03/16/1616520581532C2ABEF6CE1167B4BD104DA8D570.png"/><span>家居家装</span></a></li>
+                        
+                            
+                    <li><a href="http://wap.hxb.com.cn/wap/ycyz/index.shtml"><img src="http://wap.hxb.com.cn/images/sjbsy/sywmshmk/2017/03/16/16165217D461751631E3B11783868E855E6E7C79.png"/><span>有车一族</span></a></li>
+                        
+                            
+                    <li><a href="http://wap.hxb.com.cn/wap/lxjy/index.shtml"><img src="http://wap.hxb.com.cn/images/sjbsy/sywmshmk/2017/03/16/1616523082B957BE4567F7CD87574024177287AE.png"/><span>留学教育</span></a></li>
+                        
+                            
+                    <li><a href="http://wap.hxb.com.cn/wap/xxyl/index.shtml"><img src="http://wap.hxb.com.cn/images/sjbsy/sywmshmk/2017/03/16/16165244F46BEC4CB28FEC2A55FD084E6F96C3D3.png"/><span>休闲娱乐</span></a></li>
+                        
+                            
+                    <li><a href="http://wap.hxb.com.cn/wap/shbz/index.shtml"><img src="http://wap.hxb.com.cn/images/sjbsy/sywmshmk/2017/03/16/1616525382FD66E22A0EA7D130674B27925D773B.png"/><span>生活保障</span></a></li>
+                        
+             
+            </ul>
+-->
+		<!--</div>-->
+        
+        <!--..........................................模块分割..............................................-->
+		<div id="index_notice3">
+						
+            <div id="index_content_notice3">
+				<span class="index_notice_title3">理财产品</span>
+				<a class="index_notice_content3" href="http://wap.hxb.com.cn/wap/sjblccpxx/index.shtml">专属为您推荐高收益理财</a>
+				<a class="index_notice_more3" href="http://wap.hxb.com.cn/wap/sjblccpxx/index.shtml">更多></a>
+			</div>
+            
+			<ul>
+            
+				<li>
+					<a href="http://wap.hxb.com.cn/wap/sjblccpxx/index.shtml">
+						<p>增盈天天理财<span>尊享版</span></p>
+                        
+						<div class="index_notice_detail3">
+							<dl>
+								<dt><strong>4.10%</strong></dt>
+								<dd>预期年化收益</dd>
+							</dl>
+                                                        <!--暂时隐藏
+							<a class="index_notice_content3_buy" href="com.rytong.app.bankhx"><span>购买</span></a>
+                                                        -->
+						</div>
+                        
+					</a>
+				</li>
+             
+				<li>
+					<a href="http://wap.hxb.com.cn/wap/sjblccpxx/index.shtml">
+						<p>增盈天天理财<span>保本型A款</span></p>
+                        
+						<div class="index_notice_detail3">
+							<dl>
+								<dt><strong>3.80%</strong></dt>
+								<dd>预期年化收益</dd>
+							</dl>
+                                                        <!--暂时隐藏
+							<a class="index_notice_content3_buy" href="http://wap.hxb.com.cn/wap/sjblccpxx/index.shtml"><span>购买</span></a>
+                                                        -->
+						</div>
+                        
+					</a>
+				</li>
+             
+				<li>
+					<a href="http://wap.hxb.com.cn/wap/sjblccpxx/index.shtml">
+						<p>增盈天天理财<span>保本型B款</span></p>
+                        
+						<div class="index_notice_detail3">
+							<dl>
+								<dt><strong>3.85%</strong></dt>
+								<dd>预期年化收益</dd>
+							</dl>
+                                                        <!--暂时隐藏
+							<a class="index_notice_content3_buy" href="http://wap.hxb.com.cn/wap/sjblccpxx/index.shtml"><span>购买</span></a>
+                                                        -->
+						</div>
+                        
+					</a>
+				</li>
+             
+				<li>
+					<a href="http://wap.hxb.com.cn/wap/sjblccpxx/index.shtml">
+						<p>增盈天天理财<span>至尊版</span></p>
+                        
+						<div class="index_notice_detail3">
+							<dl>
+								<dt><strong>4.15%</strong></dt>
+								<dd>预期年化收益</dd>
+							</dl>
+                                                        <!--暂时隐藏
+							<a class="index_notice_content3_buy" href="http://wap.hxb.com.cn/wap/sjblccpxx/index.shtml"><span>购买</span></a>
+                                                        -->
+						</div>
+                        
+					</a>
+				</li>
+             
+			</ul>
+
+		</div>
+        
+        <!--..........................................模块分割..............................................-->
+		<div id="index_notice4">
+						 
+            <div id="index_content_notice4">
+				<span class="index_notice_title4">特别推荐</span>
+				<a class="index_notice_content4" href="#">华夏银行专属为您推荐</a>
+			</div>
+			<ul>
+              
+				<li><a href="http://wap.hxb.com.cn/chinese/hotnews/xjgl/index.html" style="background: url(http://wap.hxb.com.cn/images/sjbsy/tbtjmk/2017/09/13/130933011B9C3E736A6E47047DAC9192D7A373FC.png) no-repeat;background-size: 100% 100%;"><p>企业现金管理工具箱</p><span>量身定制 专属管家</span></a></li>
+				   
+				<li><a href="http://wap.hxb.com.cn/chinese/hotnews/gyl/index.html" style="background: url(http://wap.hxb.com.cn/images/sjbsy/tbtjmk/2017/09/13/130933322938D8DD00454382A2097F7B26664AD6.png) no-repeat;background-size: 100% 100%;"><p>融资共赢链</p><span>企业供应链今日服务</span></a></li>
+				   
+				<li><a href="http://wap.hxb.com.cn/wap/lxwzk/index.shtml" style="background: url(http://wap.hxb.com.cn/images/sjbsy/tbtjmk/2017/09/13/130933511DE5FF70D9C1C4623A53F8E83321611F.png) no-repeat;background-size: 100% 100%;"><p>龙行五洲</p><span>出境无忧</span></a></li>
+				  
+			</ul>
+
+		</div>
+		<!--..........................................模块分割..............................................-->
+		<div id="index_content_banner2">
+			<div class="swiper-container">
+			                       <div class="swiper-wrapper">
+                   
+			  <div class="swiper-slide"><a href="#"><img src="http://wap.hxb.com.cn/images/sjbsy/hdgdt/2017/08/04/0418184746E9AAFCEA12F8FDABA74B5F1B0F1911.png"/></a></div>
+		  
+	          </div>
+
+	    		<div class="swiper-pagination"></div>
+			</div>
+		</div>
+        <!--..........................................模块分割..............................................-->
+		<div id="index_notice5">
+			<div id="index_content_notice5">
+				<span class="index_notice_title5">华夏资讯</span>
+				<a class="index_notice_content5" href="#">在这里了解更多华夏银行！</a>
+			</div>
+			<ul>
+                              
+<li><a href="http://wap.hxb.com.cn/wap/zxgg/zxgindex.shtml" class="s-information-more">公告</a>
+<a href="http://wap.hxb.com.cn/wap/zxgg/30522.shtml"><span>华夏银行关于P4R项目深度市场挖掘课题的...</span></a>
+</li>
+
+			     
+<li><a href="http://wap.hxb.com.cn/wap/hxxw/hxindex.shtml" class="s-information-more">新闻</a>
+<a href="http://wap.hxb.com.cn/wap/hxxw/29672.shtml"><span>华夏银行首批签署联合国《负责任银行原则》</span></a>
+</li>
+
+                             
+<li><a href="http://wap.hxb.com.cn/wap/zxry/zxindex.shtml" class="s-information-more">荣誉</a>
+<a href="http://wap.hxb.com.cn/wap/zxry/24891.shtml"><span>我行被授予“2018年度资产托管业务银行...</span></a>
+</li>
+			     
+                             
+<li><a href="http://wap.hxb.com.cn/wap/mtkhx/mtindex.shtml" class="s-information-more">媒体</a>
+<a href="http://wap.hxb.com.cn/wap/mtkhx/24324.shtml"><span>【北京日报】华夏银行：勇立潮头 永不止步</span></a>
+</li>
+
+				
+			</ul>
+		</div>
+		<!--..........................................模块分割..............................................-->
+        
+        
+        <!--....................footer........................................-->
+
+                     		<div id="index_footer">
+<div id="index_foot_link">
+
+                                  <ul>
+                                   <!-- <li><a href="###" id="index_foot_share"><img src="/phone/img/share.jpg"/><span>分享</span></a></li>  --> 
+					<li><a href="http://xiaolongren.hxb.com.cn/IMClient/login/check?enter=DMT_FUNCTION_0"><img src="/phone/img/index_onlineSevice.png"/><span>在线客服</span></a></li>
+					<li><a href="http://wap.hxb.com.cn/wap/sjbsy/index.shtml"><img src="/phone/img/phone.jpg"/><span>手机版</span></a></li>
+					<li><a href="http://www.hxb.com.cn/index.shtml"><img src="/phone/img/computer.jpg"/><span>电脑版</span></a></li>
+				</ul>
+			</div>
+                       <!--20170920 delete weixin.jpg wanggc
+			<div id="index_footer_weixin_hxbank">
+				<div>
+					<img src="/phone/img/weixin.jpg"/>
+					<p>请关注华夏银行</p>
+				</div>
+			</div>
+                       -->
+
+			<div id="footer_information">
+				Copyright 版权所有 华夏银行 京ICP备11019362号
+			</div>
+			<div id="btn_backTop" style="display:none">
+				<!--<img src="/phone/img/backTop.jpg"/>-->
+				<div>︿</div>
+</div>
+		</div>
+<script type="text/javascript">
+		var _iss = _iss || [];
+		window["_BFD"] = window["_BFD"] || {};
+		_BFD.client_id = "Cmhwz_web"; //暂定
+		_BFD.BFD_USER = {	
+				"user_id" : "", //网站当前用户id（核心客户号），如果未登录就为0或空字符串			
+				"user_cookie" : "" //网站当前用户的cookie，不管是否登录都需要传
+		};
+		_BFD.script = document.createElement("script");
+		_BFD.script.type = "text/javascript";
+		_BFD.script.async = true;
+		_BFD.script.charset = "utf-8";
+		//_BFD.script.src=(('https:'==document.location.protocol?'https: ':'http:')+'//daq.hxb.com.cn:8443/service/mhanalytics.js?08ffcee2e18b4367b3f9e3c758ad2334');
+		_BFD.script.src=('https://daq.hxb.com.cn:8443/service/mhanalytics.js?08ffcee2e18b4367b3f9e3c758ad2334');
+		document.getElementsByTagName("head")[0].appendChild(_BFD.script);
+		
+		
+		//获取用户cookie信息
+		_BFD.BFD_USER.user_cookie = document.cookie;
+ 	</script>
+
+
+<!----------------------------------------------------------分享分割线---------------------------------------------------------->
+		<div id="share_box">
+			<div id="index_foot_shareDetail" style="background: url(/phone/img/share_bg.jpg) no-repeat; background-size: 100% 100%;">
+				<div class="bshare-custom icon-medium-plus">
+
+					<a title="分享到微信" class="bshare-weixin" href="javascript:void(0);"></a>
+					<a title="分享到QQ好友" class="bshare-qqim" href="javascript:void(0);"></a>
+					<a title="分享到新浪微博" class="bshare-sinaminiblog" href="javascript:void(0);"></a>
+
+				</div>
+                                   
+				<script type="text/javascript" charset="utf-8" src="/phone/js/shareButtonLite.js"></script>
+				<script type="text/javascript" charset="utf-8" src="/phone/js/bsharec0.js"></script>
+                                   
+			</div>
+		</div>
+<!----------------------------------------------------------分享分割线---------------------------------------------------------->
+		<div id="share_mask">
+			
+		</div>
+<!----------------------------------------------------------灰色分割线---------------------------------------------------------->
+			
+
+        <!--.....................footer..................................-->
+		
+	</body>
+
+</html>
+
